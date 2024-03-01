@@ -1,5 +1,11 @@
 header,body{
     margin: 60px;
+    text-align: center;
+}
+.btn{
+    background-color: red;
+color: azure;
+padding: 20px;
 }
 nav{
     display: flex;
@@ -10,7 +16,7 @@ nav a{
     text-decoration: none;
     margin: 20px;
 }
-nav span{
+nav span,h1{
     font-size: 50px;
     margin: 10px;
 }
@@ -24,6 +30,7 @@ nav span{
     background-image: url(images/head.png);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
 }
 .head form{
     padding: 50px;
@@ -33,6 +40,14 @@ nav span{
     padding: 20px;
     margin: 5px;
 }
+
+.s1{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px;
+
+}
+
 
 @media screen and (max-width: 600px)  {
     header, body{margin: 20px;}
@@ -49,11 +64,43 @@ nav span{
         padding: 20px;
         margin: 5px;
     }
+    .s1{
+        display: block;
+    }
 }
-@media screen and (min-width: 600px)  {
+
+
+@media screen and (min-width: 601px)  {
     .bar img{
          display:none;
 
+    }
+
+    .grid{
+        display: grid;
+        grid-gap: 5px;
+        grid-template-columns: repeat(8,1fr);
+    }
+    .g1{
+        grid-column: span 4;
+    }
+    .g2{
+        grid-column: span 4 ;
+    }
+    .g3{
+        grid-column: span 2;
+    }
+    .g4{
+        grid-column: span 4;
+    }
+    .g5{
+        grid-column: span 2;
+    }
+    .g6{
+        grid-column: span 4;
+    }
+    .g7{
+        grid-column: span 4;
     }
 }
 
