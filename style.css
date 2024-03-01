@@ -15,14 +15,39 @@ nav span{
     margin: 10px;
 }
 
+.head{
+    text-align: center;
+    color:azure;
+    padding: 50px;
+    margin-top: 50px;
 
+    background-image: url(images/head.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.head form{
+    padding: 50px;
+}
 
+.head form input{
+    padding: 20px;
+    margin: 5px;
+}
 
 @media screen and (max-width: 600px)  {
     header, body{margin: 20px;}
     nav a{
          display:none;
 
+    }
+
+    .head form{
+        display:flex;
+        flex-direction: column;
+    }
+    .head form input{
+        padding: 20px;
+        margin: 5px;
     }
 }
 @media screen and (min-width: 600px)  {
