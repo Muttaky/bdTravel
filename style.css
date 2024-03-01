@@ -48,6 +48,38 @@ nav span,h1{
 
 }
 
+.s2 div{
+    padding: 40px;
+    margin: 20px;
+    text-align: left;
+}
+
+.form form{
+    background-color: antiquewhite;
+    margin: 20px;
+padding: 20px;
+display: flex;
+flex-direction: column;
+align-items: center;
+}
+.form input{
+    padding: 20px;
+    margin: 5px;
+}
+
+
+.container{
+    position: relative;
+    text-align: center;
+    color: aliceblue;
+}
+.offer{
+    background-color: red;
+    position: absolute;
+    bottom: 120px;
+    right: 50px;
+    transform: rotate(-10deg);
+}
 
 @media screen and (max-width: 600px)  {
     header, body{margin: 20px;}
@@ -101,6 +133,16 @@ nav span,h1{
     }
     .g7{
         grid-column: span 4;
+    }
+
+    .s2{
+        display:grid;
+        grid-template-columns:50% 50% ;
+    }
+
+    .form{
+        display: flex;
+        justify-content:space-evenly;
     }
 }
 
