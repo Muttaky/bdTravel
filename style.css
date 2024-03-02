@@ -143,6 +143,12 @@ align-items: center;
     .form{
         display: flex;
         justify-content:space-evenly;
+
+    }
+
+    .bonus{
+        display:flex;
+        justify-content: space-evenly;
     }
 }
 
